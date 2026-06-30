@@ -77,9 +77,60 @@
       <div class="flex justify-between items-center h-16">
         <div class="flex items-center gap-2">
           <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          </div>
-          <span class="font-bold text-xl tracking-tight">TechForge</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Background gradient for the inner circle -->
+    <radialGradient id="innerGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#1e3a6f"/>
+      <stop offset="100%" stop-color="#0f1a3d"/>
+    </radialGradient>
+    
+    <!-- Subtle glow for the cyan ring -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Drop shadow for depth -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer dark background (matches image background) -->
+  <rect width="500" height="500" fill="#0a1429"/>
+  
+  <!-- Outer cyan ring -->
+  <circle cx="250" cy="250" r="210" fill="none" stroke="#00d4ff" stroke-width="6" filter="url(#glow)"/>
+  
+  <!-- Inner dark circle with gradient -->
+  <circle cx="250" cy="250" r="200" fill="url(#innerGrad)" filter="url(#shadow)"/>
+  
+  <!-- Subtle inner highlight ring -->
+  <circle cx="250" cy="250" r="196" fill="none" stroke="#1a3a6f" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Large "A" letter -->
+  <text x="210" y="310" font-family="Arial, Helvetica, sans-serif" font-size="180" font-weight="bold" fill="#ffffff" text-anchor="middle">A</text>
+  
+  <!-- "i" letter with square dot -->
+  <text x="315" y="310" font-family="Arial, Helvetica, sans-serif" font-size="160" font-weight="bold" fill="#00d4ff" text-anchor="middle">i</text>
+  
+  <!-- Square dot for the i (positioned to match the image style) -->
+  <rect x="293" y="145" width="28" height="28" fill="#00d4ff" rx="2"/>
+  
+  <!-- "OMNIX" text below -->
+  <text x="250" y="370" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="600" fill="#a0c4e8" text-anchor="middle" letter-spacing="12">OMNIX</text>
+  
+  <!-- Subtle decorative dots/particles -->
+  <circle cx="180" cy="180" r="2" fill="#00d4ff" opacity="0.3"/>
+  <circle cx="340" cy="200" r="1.5" fill="#00d4ff" opacity="0.2"/>
+  <circle cx="160" cy="320" r="1.5" fill="#00d4ff" opacity="0.25"/>
+  <circle cx="360" cy="300" r="2" fill="#00d4ff" opacity="0.2"/>
+</svg>          </div>
+          <span class="font-bold text-xl tracking-tight">Omnix AIde</span>
         </div>
         <div class="hidden md:flex items-center gap-8">
           <a href="#services" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Services</a>
@@ -387,9 +438,60 @@
       <div class="flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="flex items-center gap-2">
           <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          </div>
-          <span class="font-bold text-lg">TechForge</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Background gradient for the inner circle -->
+    <radialGradient id="innerGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#1e3a6f"/>
+      <stop offset="100%" stop-color="#0f1a3d"/>
+    </radialGradient>
+    
+    <!-- Subtle glow for the cyan ring -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Drop shadow for depth -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer dark background (matches image background) -->
+  <rect width="500" height="500" fill="#0a1429"/>
+  
+  <!-- Outer cyan ring -->
+  <circle cx="250" cy="250" r="210" fill="none" stroke="#00d4ff" stroke-width="6" filter="url(#glow)"/>
+  
+  <!-- Inner dark circle with gradient -->
+  <circle cx="250" cy="250" r="200" fill="url(#innerGrad)" filter="url(#shadow)"/>
+  
+  <!-- Subtle inner highlight ring -->
+  <circle cx="250" cy="250" r="196" fill="none" stroke="#1a3a6f" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Large "A" letter -->
+  <text x="210" y="310" font-family="Arial, Helvetica, sans-serif" font-size="180" font-weight="bold" fill="#ffffff" text-anchor="middle">A</text>
+  
+  <!-- "i" letter with square dot -->
+  <text x="315" y="310" font-family="Arial, Helvetica, sans-serif" font-size="160" font-weight="bold" fill="#00d4ff" text-anchor="middle">i</text>
+  
+  <!-- Square dot for the i (positioned to match the image style) -->
+  <rect x="293" y="145" width="28" height="28" fill="#00d4ff" rx="2"/>
+  
+  <!-- "OMNIX" text below -->
+  <text x="250" y="370" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="600" fill="#a0c4e8" text-anchor="middle" letter-spacing="12">OMNIX</text>
+  
+  <!-- Subtle decorative dots/particles -->
+  <circle cx="180" cy="180" r="2" fill="#00d4ff" opacity="0.3"/>
+  <circle cx="340" cy="200" r="1.5" fill="#00d4ff" opacity="0.2"/>
+  <circle cx="160" cy="320" r="1.5" fill="#00d4ff" opacity="0.25"/>
+  <circle cx="360" cy="300" r="2" fill="#00d4ff" opacity="0.2"/>
+</svg>       </div>
+          <span class="font-bold text-lg">Omnix AIde</span>
         </div>
         <div class="flex gap-8 text-sm text-muted-foreground">
           <a href="#services" class="hover:text-foreground transition-colors">Services</a>
