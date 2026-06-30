@@ -356,78 +356,7 @@
         <p class="text-primary-foreground/80 text-lg">Tell me about your project and I'll get back to you within 24 hours with a detailed estimate.</p>
       </div>
       <div class="rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-8 sm:p-10 reveal">
-        <form id="quoteForm" class="space-y-6">
-          <div class="grid sm:grid-cols-2 gap-6">
-            <div class="space-y-2">
-              <label class="text-sm font-medium text-primary-foreground/90">Full Name</label>
-              <input type="text" required class="w-full h-10 rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:ring-2 focus:ring-white/30" placeholder="John Doe" />
-            </div>
-            <div class="space-y-2">
-              <label class="text-sm font-medium text-primary-foreground/90">Email Address</label>
-              <input type="email" required class="w-full h-10 rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:ring-2 focus:ring-white/30" placeholder="john@company.com" />
-            </div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-6">
-            <div class="space-y-2">
-              <label class="text-sm font-medium text-primary-foreground/90">Company</label>
-              <input type="text" class="w-full h-10 rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:ring-2 focus:ring-white/30" placeholder="Acme Inc." />
-            </div>
-            <div class="space-y-2">
-              <label class="text-sm font-medium text-primary-foreground/90">Budget Range</label>
-              <select class="w-full h-10 rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-primary-foreground focus:outline-none focus:ring-2 focus:ring-white/30">
-                <option value="" class="text-foreground">Select a range...</option>
-                <option value="5k-10k" class="text-foreground">$5,000 – $10,000</option>
-                <option value="10k-25k" class="text-foreground">$10,000 – $25,000</option>
-                <option value="25k-50k" class="text-foreground">$25,000 – $50,000</option>
-                <option value="50k+" class="text-foreground">$50,000+</option>
-              </select>
-            </div>
-          </div>
-          <div class="space-y-2">
-            <label class="text-sm font-medium text-primary-foreground/90">Services Needed</label>
-            <div class="grid sm:grid-cols-2 gap-3">
-              <label class="flex items-center gap-3 rounded-md border border-white/20 bg-white/5 p-3 cursor-pointer hover:bg-white/10 transition-colors">
-                <input type="checkbox" name="services" value="web" class="rounded border-white/30 bg-white/10 text-primary focus:ring-white/30" />
-                <span class="text-sm">Web Development</span>
-              </label>
-              <label class="flex items-center gap-3 rounded-md border border-white/20 bg-white/5 p-3 cursor-pointer hover:bg-white/10 transition-colors">
-                <input type="checkbox" name="services" value="mobile" class="rounded border-white/30 bg-white/10 text-primary focus:ring-white/30" />
-                <span class="text-sm">Mobile App</span>
-              </label>
-              <label class="flex items-center gap-3 rounded-md border border-white/20 bg-white/5 p-3 cursor-pointer hover:bg-white/10 transition-colors">
-                <input type="checkbox" name="services" value="api" class="rounded border-white/30 bg-white/10 text-primary focus:ring-white/30" />
-                <span class="text-sm">API / Backend</span>
-              </label>
-              <label class="flex items-center gap-3 rounded-md border border-white/20 bg-white/5 p-3 cursor-pointer hover:bg-white/10 transition-colors">
-                <input type="checkbox" name="services" value="design" class="rounded border-white/30 bg-white/10 text-primary focus:ring-white/30" />
-                <span class="text-sm">UI/UX Design</span>
-              </label>
-              <label class="flex items-center gap-3 rounded-md border border-white/20 bg-white/5 p-3 cursor-pointer hover:bg-white/10 transition-colors">
-                <input type="checkbox" name="services" value="cloud" class="rounded border-white/30 bg-white/10 text-primary focus:ring-white/30" />
-                <span class="text-sm">Cloud / DevOps</span>
-              </label>
-              <label class="flex items-center gap-3 rounded-md border border-white/20 bg-white/5 p-3 cursor-pointer hover:bg-white/10 transition-colors">
-                <input type="checkbox" name="services" value="consulting" class="rounded border-white/30 bg-white/10 text-primary focus:ring-white/30" />
-                <span class="text-sm">Consulting</span>
-              </label>
-            </div>
-          </div>
-          <div class="space-y-2">
-            <label class="text-sm font-medium text-primary-foreground/90">Project Details</label>
-            <textarea required rows="4" class="w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:ring-2 focus:ring-white/30 resize-none" placeholder="Describe your project, goals, timeline, and any specific requirements..."></textarea>
-          </div>
-          <button type="submit" class="w-full inline-flex items-center justify-center rounded-md text-sm font-semibold bg-white text-primary h-11 px-8 hover:bg-white/90 transition-all shadow-lg">
-            Submit Request
-          </button>
-          <p class="text-xs text-center text-primary-foreground/60">No spam. Your information is kept confidential and used solely for quotation purposes.</p>
-        </form>
-        <div id="formSuccess" class="hidden text-center py-12">
-          <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-4">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-          </div>
-          <h3 class="text-2xl font-bold mb-2">Quote Request Sent!</h3>
-          <p class="text-primary-foreground/80">Thank you for reaching out. I'll review your project details and respond within 24 hours.</p>
-        </div>
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLScGQ7rfPqWlzm5_T-ekydrmId2f51ql_L6cuNmPzjaNZForzA/viewform?usp=sharing&ouid=112758852021832642839" class="hover:text-foreground transition-colors">Get a Quote</a>
       </div>
     </div>
   </section>
